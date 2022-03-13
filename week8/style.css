@@ -1,0 +1,14 @@
+.containerColor {
+    background-color: rgb(180, 177, 177);
+}
+
+.footerHeight {
+    height: 100px;
+    background-color: rgb(36, 31, 65);
+    color: aliceblue;
+}
+
+div {
+    margin: 1em;
+    padding: 5px;
+}

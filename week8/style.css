@@ -1,14 +1,19 @@
 .containerColor {
-    background-color: rgb(180, 177, 177);
+    background-color: rgb(223, 217, 217);
 }
 
-.footerHeight {
-    height: 100px;
+.partColor {
+    height: 10vh;
     background-color: rgb(36, 31, 65);
     color: aliceblue;
 }
 
 div {
-    margin: 1em;
+    margin: 5px;
     padding: 5px;
+}
+
+.navbar-brand,
+#home {
+    color: white;
 }

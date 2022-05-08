@@ -1,0 +1,15 @@
+.picture {
+    width: 40vw;
+    height: 40vw;
+}
+
+.arrow {
+    width: 30%;
+    
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+}

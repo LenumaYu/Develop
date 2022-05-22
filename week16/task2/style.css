@@ -1,0 +1,54 @@
+.calcForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 2%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    background-color: antiquewhite;
+}
+
+#carBrands {
+    border-radius: 5px;
+    border: solid rgb(202, 194, 194) 1px;
+}
+
+
+.fuel {
+    align-self: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.btn {
+    background-color: #c5000099;
+    width: 50%;
+    align-self: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 700;
+    color: bisque;
+}
+
+select,
+input {
+    border: solid rgb(202, 194, 194) 1px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.partText {
+    text-align: center;
+}
+
+.carAccident {
+    align-self: center;
+    font-weight: 400;
+}

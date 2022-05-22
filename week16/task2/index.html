@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <h2>Рассчитайте стоимость автомобиля</h2>
+    <form class="calcForm" action="">
+        <select class="carMarks" id="carBrands">Марка
+            <option value="6230000">Audi SQ5</option>
+            <option value="7290000">Audi S6</option>
+            <option value="912737">BMW i3</option>
+            <option value="6550000">BMW X3</option>
+            <option value="1609000">Ford Kuga</option>
+            <option value="1169000">Ford Focus</option>
+            <option value="727900">Lada Granta</option>
+            <option value="1107000">Lada XRAY</option>
+            <option value="2498000">Toyota Camry</option>
+            <option value="2671000">Toyota RAV 4</option>
+        </select>
+
+        <div class="fuel">
+            <h3 class="partText">Топливо</h3>
+            <label><input class="checkBoxText" type="checkbox" value="1000" name="">Бензин</label>
+            <label></label><input type="checkbox" value="2000" name="">Дизельное топливо</label>
+            <label></label><input type="checkbox" value="3000" name="">Электричество</label>
+            <label></label><input type="checkbox" value="4000" name="">Газ</label>
+        </div>
+
+        <div class="carAccident">
+            <h3 class="partText">Была в аварии</h3>
+            <label><input type="radio" value="0" name="accident" id="">Да</label>
+            <label><input type="radio" value="10000" name="accident" id="">Нет</label>
+        </div>
+        <select id="carYear">Год выпуска
+            <option value="100000">Меньше 3 лет</option>
+            <option value="70000">От 3 до 5 лет</option>
+            <option value="30000">От 5 до 7 лет</option>
+            <option value="0">Больше 7 лет</option>
+        </select>
+        <input type="number" value="" placeholder="Пробег" name="" id="mileAge">
+
+        <button class="btn" type="button">Рассчитать</button>
+        <h2 id="result"></h2>
+
+    </form>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

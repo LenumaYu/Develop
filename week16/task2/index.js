@@ -6,6 +6,9 @@ function carCalc() {
     let year = document.getElementById('carYear').value;
     let mileage = document.getElementById('mileAge').value;
     let numMileage;
+    let prices =[];
+
+    
 
     if (mileage <= 50000) {
         numMileage = +100000;
@@ -13,7 +16,12 @@ function carCalc() {
         numMileage = +0;
     }
 
-    sum = +carBrands + +fuel + +carAccident + +year + +numMileage;
+    prices.push(carBrands, fuel, carAccident, year, numMileage);
+    
+    for(let i = 0; i < prices.length; i++) {
+        sum += +prices[i];
+    }
+
     document.getElementById('result').innerHTML = sum + " RUR";
 }
 

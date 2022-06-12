@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <form class="registrationForm" action="" novalidate>
+        <h2>Создайте аккаунт Google</h2>
+
+        <input class="registration-field" placeholder="Имя" type="text" id="firstName" />
+        <input class="registration-field" placeholder="Фамилия" type="text" id="secondName" />
+        <input class="registration-field" placeholder="E-mail" type="email" id="inputEmail" />
+        <div class="underText">Вам нужно будет подтвердить, что это ваш адрес электронной почты.</div>
+        <input class="registration-field" placeholder="Пароль" type="password" id="newPassword" />
+        <input class="registration-field" placeholder="Подтвердите пароль" type="password" id="confirmPassword" />
+        <div class="underText">Пароль должен содержать не менее восьми знаков, включать буквы, цифры и специальные
+            символы</div>
+
+
+        <div id="errorMessage"></div>
+        <div class="bottomBtns">
+            <a href="#">Войти</a>
+            <button class="btn" type="button">Далее</button>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

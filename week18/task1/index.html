@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш питомец</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/3468/3468377.png" type="image/png">
+    <style>
+        input:valid {
+            border-color: rgb(23, 233, 23);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: firebrick;">Расскажите о своем питомце:</h1>
+    <img src="https://images5.alphacoders.com/374/thumbbig-374329.webp" alt="Кот">
+    <div>
+        <fieldset>
+            <legend>Давайте познакомимся?</legend>
+            <div>
+                <label for="petName">Имя питомца:</label>
+                <input type="text" name="pet" id="petName" required />*
+            </div>
+            <div>
+                <label for="ownerName">Имя владельца:</label>
+                <input type="text" name="owner" id="ownerName" required />*
+            </div>
+            <div>
+                <label for="ownerContacts">Email:</label>
+                <input type="email" name="contacts" id="ownerContacts" required />*
+            </div>
+        </fieldset>
+    </div>
+    <div>
+        <p>Порода вашего питомца:
+            <select>
+                <option value="cat breed1">Британская кошка</option>
+                <option value="cat breed2">Сиамская кошка</option>
+                <option value="cat breed3">Норвежский лесной кот</option>
+                <option value="cat breed4">Русская голубая кошка</option>
+                <option value="cat breed5">Рагамаффин</option>
+                <option value="cat breed6">Мейн-кун</option>
+                <option value="cat breed7">Персидская кошка</option>
+                <option value="cat breed8">Сфинкс</option>
+                <option value="cat breed9">Домашняя кошка без породы</option>
+            </select>
+        </p>
+    </div>
+    <div>
+        <fieldset>
+            <legend>Чем питается ваш котик <i>(выберите один или несколько вариантов)</i></legend>
+            <label for="dryFood">Сухой корм</label>
+            <input type="checkbox" name="dry" id="dryFood" value="dfood" />
+            <label for="wetFood">Влажный корм</label>
+            <input type="checkbox" name="wet" id="wetFood" value="wfood" />
+            <label for="naturalFood">Натуральный корм</label>
+            <input type="checkbox" name="natural" id="naturalFood" value="nfood" />
+        </fieldset>
+    </div>
+    <div>
+        <p>Пол вашего котика:
+            <br><label for="catFemale">Женский</label>
+            <input type="radio" name="sex" value="female" id="catFemale" />
+            <br><label for="catMale">Мужской</label>
+            <input type="radio" name="sex" value="male" id="catMale" />
+        </p>
+    </div>
+    <div>
+        <br><label for="catAge">Возраст вашего питомца?</label><br>
+        <input id="catAge" type="number" min="0" max="25" required></input>*
+    </div>
+    <div>
+        <label for="addPhoto">Добавьте фотографию котика</label>
+        <input type="file" name="petPhoto" id="addPhoto" />
+    </div>
+    <div><button>Сохранить</button></div>
+
+
+</body>
+
+</html>

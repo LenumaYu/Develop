@@ -1,0 +1,21 @@
+.wrapper {
+    background: linear-gradient(#000000, #D8BFD8);
+    margin: 0 auto;
+    width: 50%;
+    color: #f7eef7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}

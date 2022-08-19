@@ -104,7 +104,7 @@ const superHeroes = [{
 }];
 
 function App() {
-  return ( <div className = "App" > {
+  return ( <div className = "App"> {
       superHeroes.map((superHero) =>
         <HeroCard key = {superHero.id} name = {superHero.name} universe = {superHero.universe} alterEgo = {superHero.alterEgo}
         lineOfWork = {superHero.lineOfWork} friends = {superHero.friends}

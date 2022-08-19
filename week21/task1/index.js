@@ -15,4 +15,5 @@ function getPicture() {
 
 }
 
+
 document.querySelector('#btn').addEventListener('click', getPicture)

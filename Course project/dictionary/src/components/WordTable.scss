@@ -1,0 +1,53 @@
+.tableTag {
+    border: solid 1px grey;
+
+}
+
+.tableId {
+    border: solid 1px grey;
+
+}
+
+
+.table {
+    display: grid;
+    grid-template-columns: 50px repeat(5, 1fr);
+    // text-align: center;
+    background-color: #f0efef;
+    // border: solid 1px grey;
+    width: 1020px;
+    margin: 0 auto;
+
+    
+}
+
+.tableWord {
+    border: solid 1px grey;
+
+}
+
+.tableTranscription {
+    border: solid 1px grey;
+
+}
+
+.tableTranslate {
+    border: solid 1px grey;
+
+}
+
+.tableChanges {
+    border: solid 1px grey;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+img {
+    width: 20px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}

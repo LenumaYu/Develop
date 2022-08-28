@@ -1,9 +1,17 @@
+import React, { useState } from 'react';
 import './styles.scss'
 
 
 function TariffCard(props) {
+
+    const [selected, setSelected] = useState(false);
+
+    const handleSelect = () => {
+        setSelected(!selected);
+    }
+
     return (
-        <div className={"card " + (props.isSelected ? "selected" : "")}>
+        <div onClick={handleSelect} className={"card " + (selected ? "selected" : "")}>
             <div className='head' style={{ backgroundColor: props.backgroundColorHead }}>{props.name}</div>
             <div className='price' style={{ backgroundColor: props.backgroundColorPrice }}>{props.price}</div>
             <div className='speed'>{props.speed}</div>

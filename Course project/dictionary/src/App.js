@@ -8,12 +8,23 @@ const words = [{"id":"1","english":"Turquoise","transcription":"[ ˈtɜːkwɔɪz
 
 function App() {
   return (
-    <div className="App"> {
+    <div className="App"> 
+    {
       words.map((word) =>
         <WordCard key = {word.id} english = {word.english} russian = {word.russian} transcription = {word.transcription}
         tags = {word.tags}></WordCard>
       )
     }
+    <table>
+      <tr className='extraString'>
+        <td className='cellOne'>#</td>
+        <td className='cellTwo'>Тема</td>
+        <td className='cellThree'>Слово</td>
+        <td className='cellFour'>Транскрипция</td>
+        <td className='cellFive'>Перевод</td>
+        <td className='cellSix'>Редактирование</td>
+      </tr>
+    </table>
     {
       words.map((word) =>
         <WordTable key = {word.id} id = {word.id} english = {word.english} russian = {word.russian} transcription = {word.transcription}

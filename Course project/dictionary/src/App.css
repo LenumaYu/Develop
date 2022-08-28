@@ -2,3 +2,24 @@
   text-align: center;
 }
 
+table {
+  margin: 0 auto;
+
+
+}
+
+.extraString {
+  display: grid;
+  grid-template-columns: 50px repeat(5, 1fr);
+  background-color: #b0aac0;
+
+    width: 1020px;
+
+}
+
+.cellOne, .cellTwo, .cellThree, .cellFour, .cellFive, .cellSix {
+  border: solid 1px grey;
+  font-weight: 700;
+
+
+}

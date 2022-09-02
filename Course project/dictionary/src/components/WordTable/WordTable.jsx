@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './WordTable.scss'
-import deleteButton from '../assets/images/deleteButton.png'
-import editButton from '../assets/images/editButton.png'
-import saveButton from '../assets/images/saveButton.png'
+import deleteButton from '../../assets/images/deleteButton.png'
+import editButton from '../../assets/images/editButton.png'
+import saveButton from '../../assets/images/saveButton.png'
 
 
 

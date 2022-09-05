@@ -1,7 +1,12 @@
 $tableBorder: solid 1px grey;
 $mainTableColor: #f0efef;
 
-.tableTag, .tableId, .tableWord, .tableTranscription, .tableTranslate, .tableChanges {
+.tableTag,
+.tableId,
+.tableWord,
+.tableTranscription,
+.tableTranslate,
+.tableChanges {
     border: $tableBorder;
     padding: 5px;
 }
@@ -11,7 +16,7 @@ $mainTableColor: #f0efef;
     grid-template-columns: 50px repeat(5, 1fr);
     background-color: $mainTableColor;
     width: 1020px;
-    margin: 0 auto;   
+    margin: 0 auto;
 }
 
 .tableChanges {

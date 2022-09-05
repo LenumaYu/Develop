@@ -13,7 +13,6 @@ function WordCard(props) {
     }
     return (
         <div className='container'>
-            <button className='leftArrow'>&#706;</button>
             <div className="card">{
                 pressed ?
                     <>
@@ -29,7 +28,6 @@ function WordCard(props) {
                     </>
             }
             </div>
-            <button className='rightArrow'>&#707;</button>
         </div>
     );
 }

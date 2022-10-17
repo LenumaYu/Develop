@@ -1,36 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import WordCard from './WordCard/WordCard';
-import './CardSlider.scss'
+import './CardSlider.scss';
+import { words } from '../App';
 
 function CardSlider(props) {
     const [item, setItem] = useState(0);
-    const { id, ...itemProps } = props.words[item];
+    // const { id, ...itemProps } = words[item];
 
+    const prevItem = () => {
+        if (item > 0) {
+            setItem(item - 1);
+            return;
+        }
 
-    useEffect(() => {
-        const lastItem = props.words.length - 1;
-        if (item < 0) {
-            setItem(lastItem)
+        setItem(props.words.length - 1);
+    }
+
+    const nextItem = () => {
+        if (item < props.words.length - 1) {
+            setItem(item + 1);
+            return;
         }
-        if (item > lastItem) {
-            setItem(0);
-        }
-    }, [item, props.words.length]);
+
+        setItem(0);
+    }
+
 
 
     return (
         <>
-
             <div className='slider'>
-                <button className='leftArrow' onClick={() => setItem(item - 1)}>&#706;</button>
-                <WordCard key={id} {...itemProps} />
-                <button className='rightArrow' onClick={() => setItem(item + 1)}>&#707;</button>
+                <button className='leftArrow' onClick={prevItem}>&#706;</button>
+                <WordCard key={props.words[item].id} {...props.words[item]} />
+                <button className='rightArrow' onClick={nextItem}>&#707;</button>
             </div>
-            <div className='counter'>{item + 1}/{props.words.length}</div>
+            <div className='counter'>{item + 1}/{words.length}</div>
         </>
-
     );
 }
+
+
 
 export default CardSlider;
 

@@ -5,7 +5,7 @@ import './WordCard.scss'
 
 function WordCard(props) {
 
-    const { tags, english, transcription, russian } = props
+    const { tags, english, transcription, russian } = props;
     const [pressed, setPressed] = useState(false);
 
     const handlePressed = () => {

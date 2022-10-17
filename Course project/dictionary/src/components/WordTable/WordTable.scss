@@ -9,6 +9,7 @@ $mainTableColor: #f0efef;
 .tableChanges {
     border: $tableBorder;
     padding: 5px;
+    text-align: center;
 }
 
 .table {
@@ -17,6 +18,7 @@ $mainTableColor: #f0efef;
     background-color: $mainTableColor;
     width: 1020px;
     margin: 0 auto;
+
 }
 
 .tableChanges {

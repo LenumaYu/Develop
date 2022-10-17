@@ -110,7 +110,7 @@ function App() {
         lineOfWork = {superHero.lineOfWork} friends = {superHero.friends}
         superpowers = {superHero.superpowers}
         photo = {superHero.photo}
-        extraInfo = {superHero.extraInfo}></HeroCard>
+        extraInfo = {superHero.extraInfo}/>
       )
     } </div>
   );

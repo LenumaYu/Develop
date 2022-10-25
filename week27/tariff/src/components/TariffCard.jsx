@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles.scss'
+import '../components/styles.scss'
 
 
 function TariffCard(props) {

@@ -38,7 +38,6 @@ function WordList(props) {
                         <div className='tableTranscription'>{transcription}</div>
                         <div className='tableTranslate'>{russian}</div>
                         <div className='tableChanges'>
-
                             <button className='editButton' onClick={handleEdit}><img src={editButton} alt="" /></button>
                             <button className='deleteButton'>
                                 <img src={deleteButton} alt="" />

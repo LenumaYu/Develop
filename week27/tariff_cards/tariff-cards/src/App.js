@@ -25,7 +25,6 @@ const rates = [{
   speed: "до 100 Мбит/сек",
   backgroundColorPrice: "#F46A5F",
   backgroundColorHead: "#EE6C5D",
-  isSelected: true,
   info: "Объем включенного трафика не ограничен"
 }, {
   id: 4,
@@ -48,7 +47,6 @@ function App() {
         backgroundColorPrice = {rate.backgroundColorPrice} 
         backgroundColorHead = {rate.backgroundColorHead} 
         info = {rate.info} 
-        isSelected = {rate.isSelected}
         />
       )
     }

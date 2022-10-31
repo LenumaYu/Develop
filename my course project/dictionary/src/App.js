@@ -11,23 +11,16 @@ function App() {
                 { 
               words.map((word) =>
                 <WordCard 
-                key = {word.id} 
-                english = {word.english} 
-                russian = {word.russian} 
-                transcription = {word.transcription}
-                tags = {word.tags}/>
+                key = {word.id} {... word}
+                />
               )
               }
             </div>
             { 
               words.map((word) =>
                 <WordList 
-                key = {word.id} 
-                id =  {word.id}
-                english = {word.english} 
-                russian = {word.russian} 
-                transcription = {word.transcription}
-                tags = {word.tags}/>
+                key = {word.id} {... word} 
+              />
               )
               }
     </div>

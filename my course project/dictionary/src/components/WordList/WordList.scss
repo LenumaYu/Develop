@@ -1,5 +1,5 @@
 $tableBorder: solid 1px grey;
-$mainTableColor: #f0efef;
+$mainTableColor: #d2bfd1;
 
 .tableTag,
 .tableId,
@@ -16,9 +16,8 @@ $mainTableColor: #f0efef;
     display: grid;
     grid-template-columns: 50px repeat(5, 1fr);
     background-color: $mainTableColor;
-    width: 1020px;
+    width: 75%;
     margin: 0 auto;
-
 }
 
 .tableChanges {
@@ -33,6 +32,8 @@ img {
 button {
     border: none;
     cursor: pointer;
+    background-color: $mainTableColor;
+
 }
 
 input {
@@ -41,3 +42,4 @@ input {
     text-align: center;
     font-size: 15px;
 }
+

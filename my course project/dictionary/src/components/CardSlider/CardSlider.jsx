@@ -5,6 +5,11 @@ import { words } from '../../App';
 
 function CardSlider(props) {
     const [item, setItem] = useState(0);
+    const [count, setCount] = useState(0);
+
+    const handleCount = event => {
+        setCount(count++);
+    }
 
     const prevItem = () => {
         if (item > 0) {
@@ -26,9 +31,10 @@ function CardSlider(props) {
 
     return (
         <>
+            <div>Вы изучили:{count}</div>
             <div className='slider'>
                 <button className='leftArrow' onClick={prevItem}>&#706;</button>
-                <WordCard key={props.words[item].id} {...props.words[item]} />
+                <WordCard key={props.words[item].id} {...props.words[item]} onChange={handleCount} />
                 <button className='rightArrow' onClick={nextItem}>&#707;</button>
             </div>
             <div className='counter'>{item + 1}/{words.length}</div>
@@ -39,3 +45,5 @@ function CardSlider(props) {
 
 
 export default CardSlider;
+
+

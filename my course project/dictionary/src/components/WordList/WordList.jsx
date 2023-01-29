@@ -19,7 +19,7 @@ function WordList(props) {
             {
                 isEdit ?
                     <>
-                        <div className='tableId'>{props.id}</div>
+                        <div className='tableId'>{id}</div>
                         <input type="text" defaultValue={tags} />
                         <input type="text" defaultValue={english} />
                         <input type="text" defaultValue={transcription} />

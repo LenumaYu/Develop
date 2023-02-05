@@ -2,3 +2,8 @@
     width: 500px;
     height: 300px;
 }
+
+.card {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,57 @@
+$border-color: solid white 1px;
+$font-color: #808080;
+
+.head, .price, .speed, .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;   
+}
+
+.info {
+    color: $font-color;
+    background-color: #EEEEEE;
+    height: 20%;
+    border: $border-color;
+    font-size: 14px;
+}
+
+.speed {
+    color: $font-color;
+    height: 20%;
+    border: $border-color;   
+    font-size: 14px;
+
+}
+
+.card {
+    background-color: #F8F8F8;
+    height: 300px;
+    width: 200px;
+    color: #EEEEEE;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.head {
+    height: 20%;
+    border: $border-color;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.price {
+    height: 40%;
+    border: $border-color;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.selected {
+    height: 315px;
+    margin-top: -5px;
+}
+
+
+
+

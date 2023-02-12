@@ -1,6 +1,5 @@
 import './styles/App.css';
-import TariffCard from './components/TariffCard'
-
+import TariffCard from './components/TariffCard';
 
 const rates = [{
   id: 1,
@@ -37,14 +36,16 @@ const rates = [{
   info: "Объем включенного трафика не ограничен"
 }];
 
+
 function App() {
   return ( <div className = "App"> {
-      rates.map((rate) =>
-        <TariffCard key = {rate.id} name = {rate.name} price = {rate.price} speed = {rate.speed} backgroundColorPrice = {rate.backgroundColorPrice} backgroundColorHead = {rate.backgroundColorHead} info = {rate.info} isSelected = {rate.isSelected}
-        />
-      )
-    }
-    </div>
-    )}
+    rates.map((rate) =>
+      <TariffCard key = {rate.id} name = {rate.name} price = {rate.price} speed = {rate.speed} backgroundColorPrice = {rate.backgroundColorPrice} backgroundColorHead = {rate.backgroundColorHead} info = {rate.info} isSelected = {rate.isSelected}
+      />
+    )
+  }
+  </div>
+  );
+}
 
 export default App;

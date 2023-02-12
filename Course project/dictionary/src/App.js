@@ -59,8 +59,3 @@ export default App;
 
 
 
-// id = {word.id} 
-//       english = {word.english} 
-//       russian = {word.russian} 
-//       transcription = {word.transcription}
-//       tags = {word.tags}
